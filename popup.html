@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/popup.css" media="all" />
+<style>
+	body {
+		overflow-x: hidden;
+		margin: 0px;
+		padding: 0px;
+		background: white;
+		font-size:12px;
+	}
+	#container{
+		min-width:280px;
+	}
+	.links{
+		padding:5px;
+		line-height:20px;
+	}
+	.links a{
+		text-decoration:none;
+	}
+	.links a:hover{
+		text-decoration:underline;
+	}
+</style>
+</head>
+<body>
+<div id="container">
+	<div class="links">
+		<a href="###" id="nslog" status="true">开启nslog页面监控</a>&nbsp;&nbsp;&nbsp;<a href="###" id="request" status="true">开启nslog请求监控</a><br/>
+		<a href="###" id="save">更新统计文档</a>&nbsp;&nbsp;&nbsp;<a href="###" id="add">快速添加统计</a>&nbsp;&nbsp;&nbsp;<a href="###" id="clear">清除全部统计</a>
+	</div>
+	<div id="nslog-list-log" style="display:none">
+		<table id="nslog-list-log-table">
+			<thead><tr><th>变量名</th><th>中文名</th><th>参数</th><th></th></tr></thead>
+			<tbody></tbody>
+			<tfoot><tr><td colspan="4" class="nslog-list-button"><a id="nslog-list-log-save" href="###">保存</a><a id="nslog-list-log-submit" href="###">注入</a></td></tr></tfoot>
+		</table>
+	</div>
+</div>
+<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+#nslog-list-log{
+	/*width:400px;*/
+	font-size:12px;
+	background-color:#eee;
+}
+#nslog-list-log-table{
+	padding:5px 7px;
+}
+#nslog-list-log th,#nslog-list-log td{
+	line-height:18px;
+}
+#nslog-list-log .nslog-list-input, #nslog-list-log .nslog-list-log-input{
+	width:180px;
+	height:16px;
+}
+#nslog-list-log .nslog-list-log-input{
+	width:80px;
+}
+#nslog-list-log .nslog-list-log-err{
+	border-color:#ef807e;
+}
+#nslog-list-log .nslog-list-button{
+	text-align:right;
+}
+#nslog-list-log .nslog-list-button a{
+	display:inline-block;
+	width:60px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	background-color:#eee;
+	border:1px solid #ccc;
+	text-decoration:none;
+	font-weight:bold;
+	color:#666;
+	margin-left:5px;
+}
+#nslog-list-log .nslog-list-button a:hover{
+	color:#333;
+	background-color:#fff;
+}
+#nslog-list-log .nslog-list-log-del{
+	width:14px;
+	height:18px;
+	background-color:#eee;
+	border:1px solid #666;
+	display:block;
+	color:#666;
+	font-size:14px;
+	font-family:Arial;
+	line-height:18px;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+	overflow:hidden;
+}
+#nslog-list-log .nslog-list-log-del:hover{
+	color:#333;
+	background-color:#fff;
+}

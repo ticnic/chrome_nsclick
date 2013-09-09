@@ -1,0 +1,145 @@
+#chrome-expand-nslogRequestList ::-webkit-scrollbar {
+	width: 10px;
+}
+#chrome-expand-nslogRequestList ::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+#chrome-expand-nslogRequestList ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background:-webkit-linear-gradient(left, #4a4a4a 0%,#404040 100%);
+	border: 1px solid #191919;
+	box-shadow:inset 1px 0 0 #585858;
+}
+#chrome-expand-nslogRequestList ::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,255,255,0.1);
+}
+#chrome-expand-nslogRequestList ::-webkit-scrollbar-thumb:vertical:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+#chrome-expand-nslogRequestList ::-webkit-scrollbar-thumb:vertical:active{
+	background-color: rgba(255,255,255,0.7);
+}
+#chrome-expand-nslogRequestList .btn1{
+	display: inline-block;
+	vertical-align: middle;
+	color: #aaa;
+}
+#chrome-expand-nslogRequestList button[type="button"]{
+	color: #aaa;
+	border: 0;
+	margin: 0 5px;
+	white-space: nowrap;
+	background: url(../img/buttons.png) -9999em 0 no-repeat;
+}
+#chrome-expand-nslogRequestList button[type="button"]{
+	height: 26px;
+	padding: 0 10px;
+	font-size: 12px;
+	cursor: pointer;
+	background:-webkit-linear-gradient(top, #606060 1%,#424242 100%);
+	border-radius:5px;
+	border: 1px solid #151515;
+	box-shadow:0 1px 1px #272727;
+	text-shadow: 0 1px 1px rgba(0,0,0,1);
+}
+#chrome-expand-nslogRequestList button[type="button"]:active{
+	background:-webkit-linear-gradient(top, #4a4a4a 1%,#616161 100%);
+}
+#chrome-expand-nslogRequestList button[type="button"]:hover{
+	color: #00ccff;
+	text-shadow: 0 0 5px rgba(0,204,255,0.8);
+	box-shadow:0 0 5px rgba(0,204,255,0.6);
+}
+#chrome-expand-nslogRequestList{
+	display: none;
+	position: fixed;
+	z-index:10001;
+	left:10px;
+	top:10px;
+	width: 260px;
+	height: 360px;
+	overflow: hidden;
+	padding:10px;
+	border-radius:5px;
+	background-color: rgba(0,0,0,0.7);
+	color: #fff;
+	font-family: verdana;
+	-webkit-transition:width 0.2s cubic-bezier(.14,.67,.6,.98),height 0.2s cubic-bezier(.14,.67,.6,.98);
+	border: 1px solid rgba(0,0,0,0.8);
+}
+#chrome-expand-nslogRequestList header{
+	font-size: 14px;
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #777;
+	cursor: move;
+}
+#chrome-expand-nslogRequestList ul{
+	height: 260px;
+	overflow-y: auto;
+	margin: 10px 0;
+	font-size: 12px;
+}
+#chrome-expand-nslogRequestList li{
+	margin: 5px 0;
+	color: #fff;
+	word-wrap:break-word;
+	word-break:break-all;
+	font-family:Arial;
+}
+#chrome-expand-nslogRequestList.close{
+	width: 60px;
+	height: 30px;
+}
+#chrome-expand-nslogRequestList.close header,
+#chrome-expand-nslogRequestList.close ul,
+#chrome-expand-nslogRequestList.close .chrome-expand-btn-clear{
+	display: none;
+}
+#chrome-expand-addLog,
+.chrome-expand-addLog{
+	float:left;
+	width:14px;
+	height:14px;
+	margin:2px 2px 2px 0;
+	background-color:#ffe45c;
+	display:block;
+	color:#000;
+	font-size:14px;
+	font-family:Arial;
+	line-height:14px;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+	overflow:hidden;
+}
+#chrome-expand-addLog:hover,
+.chrome-expand-addLog:hover{
+	background-color:#fed22f;
+}
+.chrome-expand-nslog-place{
+	white-space: nowrap;
+	font-size: 10px;
+	padding: 1px 3px 0px;
+	position: absolute;
+	background-color: #000;
+	border: 1px solid #E3BE23;
+	z-index: 9999;
+	color:#fff;
+}
+.chrome-expand-nslog-place:hover{
+	z-index:10000;
+}
+.chrome-expand-nslog-area-outline{
+	outline:1px dashed red;
+}
+.chrome-expand-nslog-request-div{
+	position: fixed;
+	right:0px;
+	top:100px;
+	border:1px solid #ccc;
+	background:white;
+	height:200px;
+	width:200px;
+	overflow: auto;
+}
